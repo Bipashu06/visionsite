@@ -1,0 +1,40 @@
+#mobile_nav{
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+#mobile_header{
+    padding: 30px 16px;
+    color: white;
+    font-weight: 500;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#bars{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin: 20px 30px;
+    cursor: pointer;
+}
+.mobile_ul{
+  display: none;
+}
+.mobile_ul a:hover::after{
+  left: 10%;
+  width: 200%;
+}
+
+
+.mobile_ul.visible{
+  display: block;
+}
+@media (min-width: 601px){
+    .mobile_ul{
+        display: none;
+    }
+    #mobile_nav{
+       display: none;
+    }
+}

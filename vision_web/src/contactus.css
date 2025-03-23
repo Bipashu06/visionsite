@@ -1,0 +1,46 @@
+.contact_txt_container{
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact_txt_container h2{
+    font-size: 40px;
+    color: white;
+    padding: 20px 0px;
+}
+.contact_txt_container p{
+    font-size: 20px;
+    line-height: 40px;
+}
+/* form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 95%;
+    border: 8px solid #252525;
+    border-radius: 5px;
+    background-color: #363636;
+}
+form input{
+    width: 80%;
+    margin: 20px 0px;
+    font-size: 18px;
+    padding: 20px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: #363636;
+}
+form input[type="submit"]{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input:focus{
+   outline: none;
+} */
