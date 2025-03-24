@@ -1,17 +1,21 @@
 import './career.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import NavBar from './home/nav'
 import Footer from './home/footer'
 import MobileNav from './MobileNav';
 export default function Career(){
-    useEffect(() => {
-        const script = document.createElement('script'); 
-        script.src = "https://paperform.co/__embed.min.js"; 
-        document.body.appendChild(script);
-        return () => {
-          document.body.removeChild(script);
-        };
-      }, []);
+
+      const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+
     return(
         <>
         <MobileNav />
@@ -32,6 +36,17 @@ export default function Career(){
                     <div data-paperform-id="yr8zgonv"></div>
             
             </div>
+            <div className="form-container">
+        
+        <form>
+        <h2>Apply for a Job</h2>
+          <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required />
+          <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
+          <input type="text" name="phone" placeholder="Phone Number" onChange={handleChange} required />
+          <textarea name="message" placeholder="Why do you want to join?" onChange={handleChange} required />
+          <input type="submit" />
+        </form>
+      </div>
         <Footer />
         </>
     )
