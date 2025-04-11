@@ -1,0 +1,24 @@
+.contact_txt_container{
+    padding: 20px;
+    min-height: 25vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact_txt_container h2{
+    font-size: 40px;
+    color: white;
+    padding: 20px 0px;
+}
+.contact_txt_container p{
+    font-size: 20px;
+    line-height: 40px;
+}
+@media (max-width: 925px){
+    .contact_txt_container{
+        min-height: 40vw;
+    }
+}
+@media (max-width: 538px){
+    .contact_txt_container{
+        min-height: 60vw;
+    }
+}
